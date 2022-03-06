@@ -1,6 +1,5 @@
 # About Project
-The Project is about Data Filteration in Which Github Repositories of a User is Searched through SearchBar and Respective Repos Are Shown which matches the User Input
-
+The Project is about Data Filteration thorugh Dropdown with various options in Which Github Repositories of a User is shown based on selected option
 ## Available Scripts
 In the project directory, you can run:
 
