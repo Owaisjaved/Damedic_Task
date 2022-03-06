@@ -111,6 +111,8 @@ body {
     text-align: center;
     background-color: #21262d;
     cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
   }
   .Container .left-side .profile-btn>span{
     display: none;
