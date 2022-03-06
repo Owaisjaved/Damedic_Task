@@ -1,0 +1,218 @@
+body {
+    background-color: #0d1117;
+    padding: 0%;
+    margin: 0%;
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* font styling classes */
+
+  .bigText {
+    font-weight: 600;
+    font-size: 20px;
+    color: #c9d1d9;
+  }
+  .bigText2{
+    font-weight: 600;
+    font-size: 26px;
+    color: #c9d1d9;
+  }
+  .normalText {
+    font-weight: lighter;
+    font-size: 14px;
+    color: #c9d1d9;
+  }
+  .normalText2 {
+    font-weight: lighter;
+    font-size: 20px;
+    color: #c9d1d9;
+  }
+  .smallText {
+    font-weight: lighter;
+    font-size: 12px;
+    color: #c9d1d9;
+  }
+  .smallText2 {
+    font-weight: 600;
+    font-size: 14px;
+    color: #c9d1d9;
+  }
+  /* Custom Styling */
+  .block{
+    display: flex;
+  }
+  .customAlign{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .customAlign>*{
+    padding: 0.1rem;
+  }
+  .roundCircle{
+    background-color: #555555;
+    color: #555555;
+    border: 1px solid #c9d1d9;
+    padding: 1px;
+    margin: 2px;
+    border-radius: 58%;
+    height: 16px;
+    width: 16px;
+    
+  }
+  .boxStyle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(43, 247, 216);
+    padding: 0.2rem;
+    font-weight: 400;
+  }
+  .boxStyle > div {
+    margin-top: 0.2rem;
+    padding: 0.1rem;
+    text-align: center;
+    width: 100%;
+    background-color: rgb(11, 14, 6);
+    border: 1px solid black;
+    border-radius: 5rem;
+    font-style: oblique;
+  }
+  /* Search Component Styling */
+  .Main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .Container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    margin: 1rem;
+    justify-content: space-around;
+  }
+  .Container .left-side .user-image > img {
+    border-radius: 50%;
+    width: 320px;
+  }
+  .Container .left-side {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: auto;
+  }
+  .Container .left-side .profile-btn {
+    border: 1px solid #c9d1d9;
+    border-radius: 0.5rem;
+    height: 1.6rem;
+    width: 100%;
+    text-align: center;
+    background-color: #21262d;
+    cursor: pointer;
+  }
+  .Container .left-side .profile-btn>span{
+    display: none;
+
+  }
+  .Container .left-side > div {
+    margin: 0.5rem;
+  }
+  /* Search Box */
+  #searching input {
+    width: 100%;
+    height: 50px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 0;
+    background: rgb(203, 201, 201);
+    font-size: 17px;
+    transition: all 0.5s;
+    color: #050505;
+  }
+  #searching input:hover {
+    background: #414a54;
+    color: aliceblue;
+  }
+  #searching input:focus {
+    outline: none;
+  }
+  .Container .right-side {
+    width: 60%;
+    /* border-radius: 0.5rem; */
+    /* background-color: #30363d; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 1rem; */
+  }
+  .Container .right-side .repo-detail {
+    display: flex;
+    justify-content: flex-end;
+    transition: all 0.5s;
+  }
+  .customCircle{
+    background-color: #343942;
+    padding: 0.3rem;
+    border-radius: 50%;
+  }
+  .Container .right-side .filter-with-pagination{
+  margin-top:0.5rem ;
+  display: flex;
+  justify-content: space-between;
+  }
+  .Container .right-side .filter-with-pagination > div:first-child{
+      width: 65%;
+    }
+
+  .Container .right-side > div {
+    width: 100%;
+  }
+  .Container .right-side .Repo-Cards {
+    width: 100%;
+    height: auto;
+    margin-top: 1.5rem;
+    border-top: 1px solid #c9d1d9;
+  }
+  .Container .right-side .Repo-Cards .title-with-creation{
+    display: flex;
+    justify-content: space-between;
+  }
+  .Container .right-side .Repo-Cards .repo-info{
+    display: flex;
+    align-items: center;
+  }
+  .Container .right-side .Repo-Cards .repo-info>div{
+    margin: 0.5rem;
+  }
+  .Container .right-side .Repo-Cards .repo-info div:first-child{
+    display: flex;
+  }
+  .Container .right-side .Repo-Cards .repo-info div:first-child>div{
+    margin-left: 0.5rem;
+    width: 100%;
+  }
+  .Container .right-side .Repo-Cards > div {
+    margin-top: 0.5rem;
+  }
+  
+  /* Media Queries for Mobile Responsive */
+  @media only screen and (max-width: 912px) {
+    .bigText{
+      word-break: break-word;
+      font-size: 16px;
+    }
+    .Container .left-side {
+      justify-content: center;
+      align-items: center;
+    }
+    .block{
+      display: flex;
+    }
+    .Container .right-side {
+      width: auto;
+    }
+  }
+  
